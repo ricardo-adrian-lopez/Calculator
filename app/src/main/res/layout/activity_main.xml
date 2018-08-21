@@ -7,6 +7,20 @@
     android:id="@+id/root_activity_calculator"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frag_display"
+        android:name="com.mobileapps.training.calculator.DisplayFragment"
+        tools:layout="@layout/fragment_display"/>
 
+    <fragment
+        android:id="@+id/frag_input"
+        android:name="com.mobileapps.training.calculator.InputFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/frag_display"
+        tools:layout="@layout/fragment_input" />
 
 </RelativeLayout>
